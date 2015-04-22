@@ -1,0 +1,40 @@
+{
+	"type":"object",
+	"$schema": "http://json-schema.org/draft-03/schema",
+	"required":false,
+	"additionalProperties": false,
+	"properties":{
+		"apiRevision": {
+			"type":"string",
+			"required":false
+		},
+		"apiVersion": {
+			"type":"string",
+			"required":false
+		},
+		"appMessage": {
+			"type":"string",
+			"required":false
+		},
+		"appValid": {
+			"type":"boolean",
+			"required":false
+		},
+		"challengeScript": {
+			"type":"string",
+			"required":false
+		},
+		"sessionId": {
+			"type":"string",
+			"required":false
+		},
+		"status": {
+			"type":"number",
+			"required":false
+		},
+		"systemTime": {
+			"type":"integer",
+			"required":true
+		}
+	}
+}

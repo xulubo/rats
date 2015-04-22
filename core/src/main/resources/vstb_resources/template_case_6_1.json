@@ -1,0 +1,83 @@
+{
+	"status": 1,
+	"payloadTTL": "0",
+	"apiVersion": "5",
+	"apiRevision": "4",
+	"payload": 
+	[
+		{
+			"name": "cp0000-tiMov600003 - Preview",
+			"id": 215,
+			"extendedAttributes": 
+			[
+				{
+					"visibilityEndDate": "1519970400000"
+				},
+
+				{
+					"deviceName": "iostablet,androidtablet,iosmobile,androidmobile,webClient,stb"
+				},
+
+				{
+					"subType": "FVOD"
+				},
+
+				{
+					"format": "SD"
+				},
+
+				{
+					"type": "trailer"
+				}
+			],
+
+			"iconCreatedDateTime": "0",
+			"contentAttributes": 
+			{
+				"duration": "0",
+				"geoRestricted": "0",
+				"seekTime": "0",
+				"availabilityDate": 1393534200000,
+				"price": "",
+				"expDate": 1519970400000,
+				"previouslyViewedByUser": false,
+				"encodings": 
+				[
+					{
+						"network": "HSDPA",
+						"encodingId": 301,
+						"contentUrl": "http://san-dev-qpmtvx54.quickplay.com/vstb/playlist.m3u8?action=145&appId=5000&carrierId=0&appVersion=1.0&contentId=215&contentTypeId=3&deviceName=androidmobile&encodingId=301",
+						"contentSize": 0,
+						"delivery": "Streaming",
+						"drmId": 0,
+						"transactionId": 0
+					}
+				],
+
+				"pubDate": 1393534200000,
+				"guid": "cp0000-tiMov600003-preview",
+				"cpExpDuration": "",
+				"cpExpDate": "",
+				"closedCaptioning": 
+				{
+					
+				},
+
+				"contentTypeId": 3
+			},
+
+			"contextPaths": 
+			[
+				"1.2.1000198.1000082.1000308"
+			],
+
+			"iconURL": "",
+			"groupType": 3,
+			"locale": "en_CA",
+			"seriesName": "cp0000-tiMov600003",
+			"description": "Movie feature asset cp0000-tiMov600003 - Preview"
+		}
+	],
+
+	"systemTime": "${json-unit.ignore}"
+}

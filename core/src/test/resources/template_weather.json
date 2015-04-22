@@ -1,0 +1,50 @@
+{
+  "info": {
+    "a-http-warning": "You should switch to https!",
+    "apiVersion": "1.1",
+    "city": "${json-unit.ignore}",
+    "clientFeatures": [
+      "say",
+      "open-url",
+      "show-url",
+      "show-images",
+      "reminder"
+    ],
+    "clientTime": "${json-unit.ignore}",
+    "detectedLanguage": "en",
+    "emotions": [],
+    "input": "weather",
+    "isNewUser": true,
+    "locale": "en",
+    "location": "${json-unit.ignore}",
+    "login": "test-user",
+    "responseTime": "${json-unit.ignore}"
+  },
+  "output": [{
+    "actions": {
+      "say": {"text": "${json-unit.ignore}"},
+      "show": {"images": "${json-unit.ignore}"},
+      "source": {
+        "info": "World Weather Online",
+        "infoUrl": "${json-unit.ignore}",
+        "url": "${json-unit.ignore}"
+      }
+    },
+    "entities": {
+      "day": 0,
+      "input": "weather",
+      "locale": "en",
+      "location": "${json-unit.ignore}",
+      "mode": "${json-unit.ignore}",
+      "night": 0
+    },
+    "handler": "Weather",
+    "responseTime": "${json-unit.ignore}",
+    "results": {
+      "condition": "${json-unit.ignore}",
+      "degree": "${json-unit.ignore}",
+      "location": "${json-unit.ignore}",
+      "wind": "${json-unit.ignore}"
+    }
+  }]
+}

@@ -1,0 +1,95 @@
+{
+	"providerId": 68,
+	"status": 1,
+	"adResponse": 
+	{
+		"adDisableCountdown": false,
+		"adTargeted": false,
+		"extendedAttributes": 
+		{
+			"PSAdResponseAttr": "PSAdResponseValue1"
+		},
+
+		"adVideoRandomId": "${json-unit.ignore}"
+	},
+
+	"rightsObject": "${json-unit.ignore}",
+	"itemDetails": 
+	{
+		"name": "cp0000-tiMov600003 - Preview",
+		"id": 215,
+		"extendedAttributes": 
+		[
+			{
+				"visibilityEndDate": "1519970400000"
+			},
+
+			{
+				"deviceName": "iostablet,androidtablet,iosmobile,androidmobile,webClient,stb"
+			},
+
+			{
+				"subType": "FVOD"
+			},
+
+			{
+				"format": "SD"
+			},
+
+			{
+				"type": "trailer"
+			}
+		],
+
+		"iconCreatedDateTime": "0",
+		"contentAttributes": 
+		{
+			"contentProvider": 
+			{
+				"contentProviderParams": 
+				[
+					
+				],
+
+				"providerId": 68,
+				"guid": "cp0000-tiMov600003-preview",
+				"providerName": "cp0000"
+			},
+
+			"geoRestricted": "0",
+			"seekTime": "0",
+			"availabilityDate": 1393534200000,
+			"expDate": 1519970400000,
+			"previouslyViewedByUser": false,
+			"encodings": 
+			[
+				
+			],
+
+			"pubDate": 1393534200000,
+			"cpExpDuration": "",
+			"cpExpDate": "",
+			"closedCaptioning": 
+			{
+				
+			},
+
+			"contentTypeId": 3
+		},
+
+		"contextPaths": 
+		[
+			"1.2.1000198.1000082.1000308"
+		],
+
+		"price": "",
+		"iconURL": "",
+		"groupType": 3,
+		"locale": "en_CA",
+		"description": "Movie feature asset cp0000-tiMov600003 - Preview"
+	},
+
+	"apiVersion": "5",
+	"apiRevision": "4",
+	"systemTime": "${json-unit.ignore}"
+}

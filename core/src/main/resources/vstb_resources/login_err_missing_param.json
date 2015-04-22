@@ -1,0 +1,12 @@
+{
+	"status": 6,
+	"validationTransgressions": 
+	[
+		{
+			"validationParam": "challengeResp",
+			"validationMessage": " +++++ No Challenge Response supplied for a Drm 2+ login !! "
+		}
+	],
+
+	"systemTime": 1403795256270
+}

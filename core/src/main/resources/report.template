@@ -1,0 +1,90 @@
+<html>
+<head>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js"></script>
+</head>
+
+<style>
+.text {
+	white-space: pre-wrap;
+}
+
+.passed {
+	color: green;
+}
+
+.failed {
+	color: red;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th {
+	background-color: #E0E0E0;
+}
+
+table, th, td {
+   border: 1px solid black;
+}
+
+</style>
+
+
+<body>
+<a href="#" id="all">all</a> | <a href="#" id="passed" >passed</a> | <a href="#" id="failed">failed</a>
+<table>
+
+	<tr>
+		<th>Case ID</th><th>Description</th><th>Result</th><th>Errors</th><th>URL</th>
+	</tr>
+
+<tbody id="report">
+</tbody>
+</table>
+</body>
+<script type="text/template" id="template">
+<tr>
+	<td><%-id%></td>
+	<td class="text"><%-description%></td>
+	<td><a href="response_<%-id%>.json" class="<%-result%>" target="_blank"><%-result%></a></td>
+	<td class="text"><%-errors%></td>
+	<td><a href="<%-url%>" target="_blank"><%-url%></a></td>
+</tr>
+</script>
+
+<script>
+var data = {TEST_DATA};
+$(function(){
+	var template = _.template($("#template").html());
+	
+	function show(filter) {
+		$("#report").empty();
+		$.each(data, function(i, d){
+			if (!filter ) {
+				$("#report").append(template(d));
+			}
+			else if (d.result == filter) {
+				$("#report").append(template(d));
+			}
+		});
+	}
+
+	show();
+	
+	$("#all").click(function(e){
+		e.preventDefault();
+		show();
+	});
+	$("#passed").click(function(e){
+		e.preventDefault();
+		show("passed");
+	});
+	$("#failed").click(function(e){
+		e.preventDefault();
+		show("failed");
+	});		
+});
+</script>
+</html>

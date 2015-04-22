@@ -1,0 +1,38 @@
+{
+	"apiRevision": "4",
+	"apiVersion": "5",
+	"payload": 
+	[
+		{
+			"categoryAttributes": 
+			{
+				"isSubscribable": false
+			},
+
+			"contextPaths": 
+			[
+				"1.2.1000160.1000161"
+			],
+
+			"description": "",
+			"extendedAttributes": 
+			[
+				{
+					"filterId": "refcatalog"
+				}
+			],
+
+			"groupType": "-1",
+			"iconCreatedDateTime": "0",
+			"iconURL": "",
+			"id": 1000161,
+			"locale": "en_CA",
+			"name": "FR-refcatalog",
+			"price": ""
+		}
+	],
+
+	"payloadTTL": 0,
+	"status": 1,
+	"systemTime": "${json-unit.ignore}"
+}

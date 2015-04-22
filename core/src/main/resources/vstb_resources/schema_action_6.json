@@ -1,0 +1,241 @@
+{
+	"type":"object",
+	"$schema": "http://json-schema.org/draft-03/schema",
+	"id": "http://jsonschema.net",
+	"required":false,
+	"additionalProperties": false,
+	"properties":{
+		"apiVersion": {
+			"enum": [ "5" ],
+			"required":false
+		},
+		"apiRevision": {
+			"type":"string",
+			"required":true,
+			"pattern": "^4$"
+		},
+		"payloadTTL": {
+			"type":"string",
+			"required":true
+		},
+		"payload": {
+			"type":"array",
+			"required":true,
+			"items":
+				{
+					"type":"object",
+					"required":true,
+					"properties":{
+						"contentAttributes": {
+							"type":"object",
+							"required":true,
+							"properties":{
+								"availabilityDate": {
+									"type":"number",
+									"required":true
+								},
+								"closedCaptioning": {
+									"type":"object",
+									"required":true
+								},
+								"contentTypeId": {
+									"type":"number",
+									"required":true
+								},
+								"cpExpDate": {
+									"type":"string",
+									"required":true
+								},
+								"cpExpDuration": {
+									"type":"string",
+									"required":true
+								},
+								"duration": {
+									"type":"string",
+									"required":true
+								},
+								"encodings": {
+									"type":"array",
+									"required":true,
+									"items":
+										{
+											"type":"object",
+											"required":true,
+											"properties":{
+												"contentSize": {
+													"type":"number",
+													"required":true
+												},
+												"contentUrl": {
+													"type":"string",
+													"required":true
+												},
+												"delivery": {
+													"type":"string",
+													"required":true
+												},
+												"drmId": {
+													"type":"number",
+													"required":true
+												},
+												"encodingId": {
+													"type":"number",
+													"required":true
+												},
+												"network": {
+													"type":"string",
+													"required":true
+												},
+												"transactionId": {
+													"type":"number",
+													"required":true
+												}
+											}
+										}
+									
+
+								},
+								"expDate": {
+									"type":"number",
+									"required":true
+								},
+								"geoRestricted": {
+									"type":"string",
+									"required":true
+								},
+								"guid": {
+									"type":"string",
+									"required":true
+								},
+								"previouslyViewedByUser": {
+									"type":"boolean",
+									"required":true
+								},
+								"price": {
+									"type":"string",
+									"required":true
+								},
+								"pubDate": {
+									"type":"number",
+									"required":true
+								},
+								"seekTime": {
+									"type":"string",
+									"required":true
+								}
+							}
+						},
+						"contextPaths": {
+							"type":"array",
+							"required":true,
+							"items":
+								{
+									"type":"string",
+									"required":true
+								}
+							
+
+						},
+						"description": {
+							"type":"string",
+							"required":true
+						},
+						"extendedAttributes": {
+							"type":"array",
+							"required":true,
+							"items":[
+								{
+									"type":"object",
+									"required":true,
+									"properties":{
+										"format": {
+											"type":"string",
+											"required":false
+										}
+									}
+								},
+								{
+									"type":"object",
+									"required":true,
+									"properties":{
+										"type": {
+											"type":"string",
+											"required":false
+										}
+									}
+								},
+								{
+									"type":"object",
+									"required":true,
+									"properties":{
+										"visibilityEndDate": {
+											"type":"string",
+											"required":false
+										}
+									}
+								},
+								{
+									"type":"object",
+									"required":false,
+									"properties":{
+										"deviceName": {
+											"type":"string",
+											"required":false
+										}
+									}
+								},
+								{
+									"type":"object",
+									"required":false,
+									"properties":{
+										"subType": {
+											"type":"string",
+											"required":false
+										}
+									}
+								}
+							]
+						},
+						"groupType": {
+							"type":"number",
+							"required":false
+						},
+						"iconCreatedDateTime": {
+							"type":"string",
+							"required":true
+						},
+						"iconURL": {
+							"type":"string",
+							"required":true
+						},
+						"id": {
+							"type":"number",
+							"required":true
+						},
+						"locale": {
+							"type":"string",
+							"required":true
+						},
+						"name": {
+							"type":"string",
+							"required":true
+						},
+						"seriesName": {
+							"type":"string",
+							"required":true
+						}
+					}
+				}
+			
+
+		},
+		"status": {
+			"type":"number",
+			"required":true
+		},
+		"systemTime": {
+			"type":"integer",
+			"required":true
+		}
+	}
+}

@@ -1,0 +1,34 @@
+{
+	"type":"object",
+	"$schema": "http://json-schema.org/draft-03/schema",
+	"required":false,
+	"properties":{
+		"status": {
+			"enum": [1,2,3,4,5,6,7,8,9.10,11,12,14,301,302,303,304,305,306,307,400,500,501,502,503,519,520],
+			"required":true
+		},
+		"systemTime": {
+			"type":"number",
+			"required":true
+		},
+		"validationTransgressions": {
+			"type":"array",
+			"required":false,
+			"items":
+				{
+					"type":"object",
+					"required":false,
+					"properties":{
+						"validationMessage": {
+							"type":"string",
+							"required":false
+						},
+						"validationParam": {
+							"type":"string",
+							"required":false
+						}
+					}
+				}
+		}
+	}
+}
