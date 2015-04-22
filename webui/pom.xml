@@ -146,15 +146,6 @@
 		</dependency>
 
 		<dependency>
-			<groupId>com.quickplay.drm</groupId>
-			<artifactId>QpDrmServerLibJdk6</artifactId>
-			<version>1.0.1.9</version>
-		</dependency>
-		<!-- <dependency> <groupId>com.quickplay.drm</groupId> <artifactId>QpDrmLibJdk6</artifactId> 
-			<version>1.0.1.8</version> </dependency> <dependency> <groupId>${project.groupId}</groupId> 
-			<artifactId>sharedservices-client</artifactId> <version>5.1.0.14</version> 
-			</dependency> -->
-		<dependency>
 			<groupId>org.antlr</groupId>
 			<artifactId>antlr4</artifactId>
 			<version>4.3</version>

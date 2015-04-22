@@ -7,7 +7,7 @@ import ca.loobo.rats.runner.SuiteRunner;
 
 @RunWith(SuiteRunner.class)
 @ResourceFiles(
-	value="file:src/test/resources/samplecase.xlsx"
+	value="file:src/main/resources/samplecase.xlsx"
 //	, allows = { "case1" }
 	)
 //@Host(host="localhost", port=8082)

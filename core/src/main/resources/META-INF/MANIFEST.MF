@@ -1,5 +1,0 @@
-Manifest-Version: 1.0
-Class-Path: .
-Rsrc-Main-Class: com.quickplay.catalog.api.test.ApiRunner
-Main-Class: org.eclipse.jdt.internal.jarinjarloader.JarRsrcLoader
-

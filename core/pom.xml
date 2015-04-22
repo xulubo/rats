@@ -45,7 +45,7 @@
 					</descriptors>
 					<archive>
 						<manifest>
-							<mainClass>com.quickplay.restbot.Main</mainClass>
+							<mainClass>ca.loobo.rats.Main</mainClass>
 						</manifest>
 					</archive>
 				</configuration>
@@ -218,15 +218,6 @@
 		</dependency>
 
 		<dependency>
-			<groupId>com.quickplay.drm</groupId>
-			<artifactId>QpDrmServerLibJdk6</artifactId>
-			<version>1.0.1.9</version>
-		</dependency>
-		<!-- <dependency> <groupId>com.quickplay.drm</groupId> <artifactId>QpDrmLibJdk6</artifactId> 
-			<version>1.0.1.8</version> </dependency> <dependency> <groupId>${project.groupId}</groupId> 
-			<artifactId>sharedservices-client</artifactId> <version>5.1.0.14</version> 
-			</dependency> -->
-		<dependency>
 			<groupId>org.antlr</groupId>
 			<artifactId>antlr4</artifactId>
 			<version>4.3</version>
@@ -272,16 +263,5 @@
 			</build>
 		</profile>
 	</profiles>
-	<distributionManagement>
-		<repository>
-			<id>nexus</id>
-			<name>Release repository</name>
-			<url>http://maven.quickplay.local/nexus/content/repositories/releases</url>
-		</repository>
-		<snapshotRepository>
-			<id>nexus</id>
-			<name>Snapshot repository</name>
-			<url>http://maven.quickplay.local/nexus/content/repositories/snapshots</url>
-		</snapshotRepository>
-	</distributionManagement>
+
 </project>
