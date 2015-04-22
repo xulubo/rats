@@ -10,39 +10,39 @@
 		http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-3.2.xsd
 		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.2.xsd">
 
-	<context:component-scan base-package="com.quickplay.restbot">
+	<context:component-scan base-package="ca.loobo.rats">
 	</context:component-scan>
 
-	<bean class="com.quickplay.restbot.runner.DefaultCaseRunnerFactory">
+	<bean class="ca.loobo.rats.runner.DefaultCaseRunnerFactory">
 		<property name="caseFilters" ref="caseFilters">
 		</property>
 	</bean>
 
 	<util:list id="caseFilters" list-class="java.util.ArrayList">
-		<bean class="com.quickplay.restbot.filter.SessionInjectionFilter" />
-		<bean class="com.quickplay.restbot.filter.PreScriptFilter" />
-		<bean class="com.quickplay.restbot.filter.CaseExecutionFilter" />
-		<bean class="com.quickplay.restbot.filter.ResponseValidationFilter" />
-		<bean class="com.quickplay.restbot.filter.ResponseSchemaValidationFilter" />
-		<bean class="com.quickplay.restbot.filter.ResponseTemplateValidationFilter" />
-		<bean class="com.quickplay.restbot.filter.PostScriptFilter" />
+		<bean class="ca.loobo.rats.filter.SessionInjectionFilter" />
+		<bean class="ca.loobo.rats.filter.PreScriptFilter" />
+		<bean class="ca.loobo.rats.filter.CaseExecutionFilter" />
+		<bean class="ca.loobo.rats.filter.ResponseValidationFilter" />
+		<bean class="ca.loobo.rats.filter.ResponseSchemaValidationFilter" />
+		<bean class="ca.loobo.rats.filter.ResponseTemplateValidationFilter" />
+		<bean class="ca.loobo.rats.filter.PostScriptFilter" />
 	</util:list>
 
 	<util:list id="valueResolvers" list-class="java.util.ArrayList">
-		<bean class="com.quickplay.restbot.param.resolver.ConstantValueResolver" />
-		<bean class="com.quickplay.restbot.param.resolver.CaseVariableResolver" />
-		<bean class="com.quickplay.restbot.param.resolver.ExprValueResolver" />
+		<bean class="ca.loobo.rats.param.resolver.ConstantValueResolver" />
+		<bean class="ca.loobo.rats.param.resolver.CaseVariableResolver" />
+		<bean class="ca.loobo.rats.param.resolver.ExprValueResolver" />
 	</util:list>
 
 	<util:list id="valueValidators" list-class="java.util.ArrayList">
-		<bean class="com.quickplay.restbot.validators.ExpressionValidator" />
-		<bean class="com.quickplay.restbot.validators.DefaultValueValidator" />
+		<bean class="ca.loobo.rats.validators.ExpressionValidator" />
+		<bean class="ca.loobo.rats.validators.DefaultValueValidator" />
 	</util:list>
 
 	<util:list id="responseValueReaders" list-class="java.util.ArrayList">
-		<bean class="com.quickplay.restbot.validators.ResponseHeaderValueReader" />
-		<bean class="com.quickplay.restbot.validators.JsonResponseValueReader" />
-		<bean class="com.quickplay.restbot.validators.DefaultValueReader" />
+		<bean class="ca.loobo.rats.validators.ResponseHeaderValueReader" />
+		<bean class="ca.loobo.rats.validators.JsonResponseValueReader" />
+		<bean class="ca.loobo.rats.validators.DefaultValueReader" />
 	</util:list>
 
 </beans>
