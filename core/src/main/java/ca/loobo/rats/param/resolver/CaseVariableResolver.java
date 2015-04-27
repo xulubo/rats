@@ -4,18 +4,13 @@ import java.util.Collection;
 import java.util.List;
 import java.util.Map;
 
-import org.apache.commons.lang.StringUtils;
-import org.springframework.beans.factory.annotation.Autowired;
-
 import ca.loobo.rats.caze.Case;
 import ca.loobo.rats.caze.CaseSessionHolder;
 import ca.loobo.rats.caze.TestContext;
-import ca.loobo.rats.exceptions.VariableUnresolvableException;
 import ca.loobo.rats.utils.ParamUtils;
 
 import com.google.common.base.Splitter;
 import com.google.common.collect.Maps;
-import com.jayway.jsonpath.JsonPath;
 
 /**
  * Resolve variables which are defined in the case scope, 

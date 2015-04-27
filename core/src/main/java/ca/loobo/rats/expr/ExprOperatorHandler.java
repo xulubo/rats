@@ -1,6 +1,5 @@
 package ca.loobo.rats.expr;
 
-import org.apache.commons.lang.StringUtils;
 import org.apache.http.util.Asserts;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

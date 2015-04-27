@@ -15,7 +15,6 @@ import javax.sql.DataSource;
 import org.apache.commons.lang.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.Resource;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.datasource.SimpleDriverDataSource;
@@ -27,7 +26,6 @@ import ca.loobo.rats.AppContext;
 import ca.loobo.rats.exceptions.CaseNotFoundException;
 import ca.loobo.rats.exceptions.ResourceNotFoundException;
 import ca.loobo.rats.validators.DefaultValueReaderChain;
-import ca.loobo.rats.validators.ValueReader;
 
 import com.google.common.collect.Maps;
 

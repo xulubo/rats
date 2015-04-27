@@ -1,6 +1,5 @@
 package ca.loobo.rats.filter;
 
-import java.util.List;
 import java.util.Map.Entry;
 import java.util.regex.PatternSyntaxException;
 
@@ -14,7 +13,6 @@ import ca.loobo.rats.caze.Case;
 import ca.loobo.rats.caze.ParamValue;
 import ca.loobo.rats.caze.TestContext;
 import ca.loobo.rats.exceptions.CaseResponseValidationException;
-import ca.loobo.rats.validators.ValueReader;
 import ca.loobo.rats.validators.ValueValidatorChainFactory;
 
 public class ResponseValidationFilter implements CaseFilter {

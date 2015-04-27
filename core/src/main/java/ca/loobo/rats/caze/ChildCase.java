@@ -1,7 +1,5 @@
 package ca.loobo.rats.caze;
 
-import static ca.loobo.rats.caze.MetaName.id;
-
 import java.util.Map;
 import java.util.Map.Entry;
 
